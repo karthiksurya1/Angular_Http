@@ -1,0 +1,53 @@
+<p> Http Get and Post</p>
+<table class="table">
+  <tr class="row">
+    <td class="col">PostId</td>
+    <td class="col">Id</td>
+    <td class="col">Name</td>
+    <td class="col">Email</td>
+    <td width="200" class="col">body</td>
+  </tr>
+  <tr *ngFor="let comm of listcomments" class="row">
+    <td class="col">{{comm.postId}}</td>
+    <td class="col">{{comm.id}}</td>
+    <td class="col">{{comm.name}}</td>
+    <td class="col">{{comm.email}}</td>
+    <td class="col" width="300">{{comm.body}}</td>
+  </tr>
+</table>
+
+<p> Http Get with params</p>
+<table class="table">
+  <tr class="row">
+    <td class="col">UserId</td>
+    <td class="col">Id</td>
+    <td class="col">Title</td>
+    <td width="200" class="col">Body</td>
+  </tr>
+  <tr *ngFor="let pcomm of listpostparam" class="row">
+    <td class="col">{{pcomm.userId}}</td>
+    <td class="col">{{pcomm.id}}</td>
+    <td class="col" width="300">{{pcomm.title}}</td>
+    <td class="col" width="300">{{pcomm.body}}</td></tr>
+</table>
+
+<p> Http Post</p>
+<table class="table">
+  <tr class="row">
+    <td class="col">UserId</td>
+    <td class="col">Id</td>
+    <td class="col">Title</td>
+    <td width="200" class="col">Body</td>
+  </tr>
+  <tr *ngFor="let mypostcomm of listmypostnew" class="row">
+    <td class="col">{{mypostcomm.userId}}</td>
+    <td class="col">{{mypostcomm.id}}</td>
+    <td class="col" width="300">{{mypostcomm.title}}</td>
+    <td class="col" width="300">{{mypostcomm.body}}</td></tr>
+</table>
+
+<p>userid: {{listmypost.userId}}</p>
+<p>id: {{listmypost.id}}</p>
+<p>title: {{listmypost.title}}</p>
+<p>body: {{listmypost.body}}</p>
+
